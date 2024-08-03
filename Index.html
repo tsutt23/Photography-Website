@@ -22,9 +22,9 @@
         <section id="gallery" class="gallery">
             <h2>Photo Gallery</h2>
             <div class="photos">
-                <img src="images/photo1.jpg" alt="Photo 1">
-                <img src="images/photo2.jpg" alt="Photo 2">
-                <img src="images/photo3.jpg" alt="Photo 3">
+                <img src="images/photo1.jpg" alt="Photo 1" class="photo">
+                <img src="images/photo2.jpg" alt="Photo 2" class="photo">
+                <img src="images/photo3.jpg" alt="Photo 3" class="photo">
                 <!-- Add more photos as needed -->
             </div>
         </section>
@@ -41,5 +41,15 @@
             </form>
         </section>
     </main>
+
+    <!-- Modal for Full-Screen Image Display -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
