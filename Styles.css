@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
@@ -37,7 +38,7 @@ nav ul li a:hover {
 
 .header-image {
     width: 100%;
-    max-height: 300px;
+    max-height: 400px;
     object-fit: cover;
 }
 
@@ -45,8 +46,11 @@ h1 {
     margin: 0.5em 0;
 }
 
-.gallery {
+main {
     padding: 2em;
+}
+
+.gallery {
     text-align: center;
 }
 
@@ -58,21 +62,23 @@ h1 {
 }
 
 .photos img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+    width: 300px;
+    height: 200px;
     object-fit: cover;
     border-radius: 5px;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .photos img:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contact {
-    padding: 2em;
     text-align: center;
+    background-color: #eee;
+    padding: 2em;
+    border-radius: 10px;
 }
 
 form {
@@ -156,6 +162,23 @@ button:hover {
     padding: 10px 0;
 }
 
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
 @media screen and (max-width: 700px) {
     .modal-content {
         width: 100%;
@@ -169,5 +192,10 @@ button:hover {
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    .photos img {
+        width: 100%;
+        max-width: 100%;
     }
 }
